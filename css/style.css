@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'), url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'ralewayregular';
+}
+
+#mainheader a {
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+}
+
+#mainheader {
+    background-color: black;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.header_container {
+    width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#mainheader span {
+    text-transform: uppercase;
+}
+
+.logo {
+    float: left;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.logo>span {
+    color: #24BA9F;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+li>span {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    background-color: black;
+    display: inline-block;
+    padding-top: 20px;
+    top: -5px;
+}
+
+nav>ul>li {
+    float: left;
+    list-style: none;
+    margin-left: 40px;
+    width: 100px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.menu {
+    visibility: hidden;
+    top: -60px;
+    background-color: black;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu>li {
+    position: relative;
+}
+
+nav>ul>li:hover >ul.menu {
+    visibility: visible;
+    top: 65px;
+    transition: 1s;
+}
+
+ul.menu:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 38%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+
+.horMenu {
+    right: -125px;
+    position: absolute;
+    display: inline;
+    top: 0px;
+    padding-left: 30px;
+    visibility: hidden;
+    transform: scaleY(0);
+}
+
+.horMenu>li {
+    width: 100px;
+    background-color: black;
+    text-align: center;
+}
+
+.menu>li:hover>.horMenu {
+    transform-origin: top;
+    visibility: visible;
+    transform: scaleY(1);
+    transition: 1s;
+}
+
+ul.horMenu:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    border: 10px solid transparent;
+    border-right: 10px solid black;
+}
+
+/* Koniec kodu nagłówka*/
+
+#mainsection {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 29%, rgba(237, 237, 237, 1) 97%, rgba(237, 237, 237, 1) 99%);
+    width: 100%;
+}
+
+#mainsection_container {
+    width: 1000px;
+    margin: 100px auto 0 auto;
+    height: 400px;
+    position: relative;
+}
+
+#mainsection a {
+    text-decoration: none;
+}
+
+.left {
+    font-size: 50px;
+    left: 0px;
+    padding-right: 25px;
+    position: absolute;
+    top: 170px;
+    color: #24BA9F;
+}
+
+.left:hover {
+    left: -20px;
+    font-size: 50px;
+    transition-duration: 1s;
+}
+
+.right {
+    font-size: 50px;
+    right: 0;
+    padding-left: 25px;
+    position: absolute;
+    top: 170px;
+    color: #24BA9F;
+}
+
+.right:hover {
+    right: -20px;
+    font-size: 50px;
+    transition-duration: 1s;
+}
+
+.tv {
+  width: 450px;
+  height: 398px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-left: 50px;
+}
+.tv_container {
+  width: 1350px;
+  position: absolute;
+  transition: all 2s;
+  left: 0;
+}
+.tv_container div {
+  width: 450px;
+  float: left;
+}
+
+#mainsection img {
+    width: 100%;
+    height: 398px;
+}
+
+#mainsection article {
+    display: inline-block;
+    width: 400px;
+    height: 398px;
+    margin: 0px 25px;
+    vertical-align: top;
+}
+
+#mainsection article span {
+    color: #24BA9F;
+    font-weight: bold;
+}
+
+#mainsection p {
+    text-align: justify;
+}
+
+#mainsection p.text {
+    height: 150px;
+    overflow: auto;
+}
+
+#mainsection .title {
+    width: 300px;
+    margin: 50px auto 25px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.button {
+    margin: 20px auto;
+    background-color: #24BA9F;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.button a {
+    color: #FFFFFF;
+    padding: 12px 35px;
+}
+
+
+/*Koniec kodu mainsection*/
+
+#gallery_container {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#gallery_container li {
+    display: inline-block;
+    width: 300px;
+    height: 220px;
+    margin: 20px 0 40px 22px;
+    position: relative;
+    vertical-align: top;
+}
+
+#gallery_container li.bigger {
+    border: 1px solid #a7a7a7;
+    height: 250px;
+}
+
+.img1 {
+    background-image: url('../images/box1_img.jpg');
+    background-size: 100% 100%;
+}
+
+.img2 {
+    background-image: url('../images/box2_img.jpg');
+    background-size: 100% 100%;
+}
+
+#gallery_container div {
+    position: absolute;
+    top: 130px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.35);
+    width: 100%;
+}
+
+#gallery_container p.chairs {
+    border-bottom: 8px solid #24BA9F;
+    margin-left: 10px;
+    width: 50%;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#gallery_container .pBigger {
+    margin: 20px 0 0 15px;
+    border-bottom: 8px solid #24BA9F;
+    width: 50%;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#gallery_container p {
+    margin: 10px 15px 0 15px;
+    padding-bottom: 2px;
+}
+
+/*koniec kodu galerii*/
+
+#cennik {
+    background-color: #F1F1F1;
+}
+
+#cennik a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 40px;
+}
+
+#cennik_container {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cennikMain {
+    width: 31.5%;
+    padding: 20px 0 5px 0;
+    border-bottom: 8px solid #24BA9F;
+    text-transform: uppercase;
+    margin-left: 20px
+}
+
+#cennik li {
+    position: relative;
+    background-color: #F9F9F9;
+    border: 1px solid #C2C2C2;
+    display: inline-block;
+    width: 30%;
+    height: 390px;
+    margin: 50px 1.5% 40px 1.5%;
+    position: relative;
+    vertical-align: top;
+}
+
+#cennik li p {
+    text-align: center;
+}
+
+#cennik li p:nth-child(2) {
+    padding: 35px 0 0 0;
+    color: #24BA9F;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#cennik li p:nth-child(4) {
+    padding: 5px 0;
+    background-color: #E4E4E4;
+    color: #959595;
+}
+
+#cennik li p:nth-child(5) {
+    padding: 5px 0;
+    background-color: #F1F1F1;
+    color: #959595;
+}
+
+#cennik li p:nth-child(6) {
+    padding: 5px 0;
+    background-color: #E4E4E4;
+    color: #959595;
+}
+
+#cennik li p:nth-child(7) {
+    padding: 5px 0;
+    background-color: #F1F1F1;
+    color: #959595;
+}
+
+.price {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    padding-top: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    color: #BCBCBC;
+}
+
+.price span {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#cennik .circle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left: 40%;
+    top: -30px;
+    border: 1px solid #C2C2C2;
+    z-index: 5;
+    background-color: #FFFFFF;
+}
+
+#cennik .circle:after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 11.5px;
+    top: 11.5px;
+    border-radius: 50%;
+    background-color: #C2C2C2
+}
+
+.button2 {
+    position: absolute;
+    left: 75px;
+    bottom: 15px;
+    background-color: #24BA9F;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#cennik li:nth-child(2) {
+    background-color: #24BA9F;
+    border: 1px solid #24BA9F;
+}
+
+#cennik li:nth-child(2) p:nth-child(2) {
+    color: #FFFFFF;
+}
+
+#cennik li:nth-child(2) .circle {
+    border: 1px solid #24BA9F;
+    z-index: 5;
+    background-color: #24BA9F;
+}
+
+#cennik li:nth-child(2) .circle:after {
+    background-color: #FFFFFF;
+}
+
+#cennik li:nth-child(2) .price {
+    border: 1px solid #24BA9F;
+}
+
+#cennik li:nth-child(2) p:nth-child(4) {
+    background-color: #FFFFFF;
+}
+
+#cennik li:nth-child(2) p:nth-child(6) {
+    background-color: #FFFFFF;
+}
+
+#cennik li:nth-child(2) .button2 {
+    background-color: #FFFFFF;
+}
+
+#cennik li:nth-child(2) .button2 a {
+    color: #24BA9F;
+}
+
+/* Koniec kodu cennika*/
+
+#contact_container {
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.contactMain {
+    width: 31.5%;
+    padding: 20px 0 5px 0;
+    border-bottom: 8px solid #24BA9F;
+    text-transform: uppercase;
+    margin-left: 20px
+}
+
+form {
+    width: 600px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+#contact li {
+    margin: 20px 0 0 20px;
+}
+
+#contact input {
+    width: 100%;
+}
+
+#contact label {
+    cursor: text;
+}
+
+#contact input {
+    border: 1px solid #24BA9F;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid #24BA9F;
+}
+
+.form2 {
+    width: 350px;
+    float: right;
+    position: relative;
+}
+
+form img {
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.check {
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-image: url("../images/form_ok.jpg");
+    position: absolute;
+    border: 1px solid #24BA9F;
+    display: inline-block;
+    top: 195px;
+    left: -5px;
+}
+
+.custom_check {
+    display: none;
+}
+
+.check2 {
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+    left: 60px;
+}
+
+button {
+    position: absolute;
+    background-color: #24BA9F;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    left: 10px;
+    top: 275px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Kooniec kodu contact*/
+
+#footer_container {
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto 50px auto;
+}
+
+#footerMenu {
+    list-style-type: none;
+    margin: 10px 20px 0 50px;
+    padding-top: 10px;
+    height: 35px;
+    width 140px;
+    display: inline-block;
+}
+
+footer p:first-child {
+    width: 550px;
+    margin: 0 0 0px 20px;
+    display: inline-block;
+    font-size: 12px;
+    color: #BCBCBC;
+}
+
+footer p:nth-child(3) {
+    display: inline-block;
+    width: 150px;
+    color: #BCBCBC;
+    text-transform: uppercase;
+}
+
+footer p:nth-child(3) span {
+    font-weight: bold;
+}
+
+#footerMenu li {
+    float: left;
+    margin-right: 10px;
+}
+
+#footerMenu li:first-child {
+    margin-left: 0;
+}
+
+#footerMenu li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/duszek.png");
+    text-indent: -2000px;
+}
+
+#footerMenu #fr a {}
+
+#footerMenu #vi a {
+    background-position: -70px 0;
+}
+
+#footerMenu #oo a {
+    background-position: -140px 0;
+}
+
+#footerMenu #twitter a {
+    background-position: -210px 0;
+}
+
+#footerMenu #fr a:hover {
+    background-position: -35px 0;
+}
+
+#footerMenu #vi a:hover {
+    background-position: -105px 0;
+}
+
+#footerMenu #oo a:hover {
+    background-position: -175px 0;
+}
+
+#footerMenu #twitter a:hover {
+    background-position: -245px 0;
+}
